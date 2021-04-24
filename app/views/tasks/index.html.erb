@@ -8,8 +8,3 @@
   
 <p><%= link_to '新規タスクの投稿', new_task_path %></p>
 <p> <%= link_to 'Logout', logout_path, method: :delete %></p>
-  
-<% unless logged_in? %>
-  <p><%= link_to 'Sign up now!', signup_path, class: 'btn btn-lg btn-primary' %></p>
-  <p><%= link_to 'Login', login_path, class: 'nav-link' %></p>
-<% end %>
